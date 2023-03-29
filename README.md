@@ -30,7 +30,7 @@ $ sudo gem install puppet-lint
 ```
 
 
-### Basic construct of a puppet manifest
+### The basic construct of a puppet manifest
 
 Following are some of the relevant Puppet terminology and concepts.
 
@@ -65,7 +65,7 @@ class example_class {
 }
 ```
 
-> To learn more [click here!](https://www.puppet.com/docs/puppet/6/lang_resources.html)
+> Learn more about puppet resources fundamentals [here!](https://www.puppet.com/docs/puppet/6/lang_resources.html)
 
 
 ### Puppet Resources with examples
