@@ -75,7 +75,8 @@ infrastructure. Puppet uses resources to define the state of a
 system, and it provides a large number of resource types for
 managing various aspects of a system. Here are some of the most
 commonly used puppet resources and examples of how they are used:
-> Read about 'Core types cheat sheet [here](https://www.puppet.com/docs/puppet/6/cheatsheet_core_types.html#)
+
+> Read about 'Core (resource) types cheat sheet [here](https://www.puppet.com/docs/puppet/6/cheatsheet_core_types.html#)
 
 #### File Resource
 The file resource is used to manage files on a system. It can be used
