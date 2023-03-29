@@ -14,6 +14,22 @@ journey and provide a helpful resource for anyone looking to
 learn Puppet.
 
 
+### Install `puppet`
+```
+$ sudo apt-get update
+$ sudo apt-get install -y ruby
+$ sudo apt-get install -y ruby-augeas
+$ sudo apt-get install -y ruby-shadow
+$ sudo apt-get install -y puppet
+```
+
+
+### Install `puppet-lint`
+```
+$ sudo gem install puppet-lint
+```
+
+
 ### Puppet Resources with examples
 Puppet is a configuration management tool that allows system
 administrators to automate the deployment and management of
