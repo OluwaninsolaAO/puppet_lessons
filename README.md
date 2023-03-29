@@ -24,7 +24,8 @@ commonly used puppet resources and examples of how they are used:
 
 
 1. __File Resource__: The file resource is used to manage files on
-a system. It can be used to create, modify, or delete files.<br>
+a system. It can be used to create, modify, or delete files.
+
 Example:
 ```
 file { '/etc/motd':
@@ -39,9 +40,11 @@ with the content "Welcome to my system!" and sets the owner to root,
 group to root, and mode to 0644.
 
 
+
 2. __Package Resource__: The package resource is used to manage
 packages on a system. It can be used to install, upgrade, or remove
-packages.<br>
+packages.
+
 Example:
 ```
 package { 'nginx':
@@ -51,9 +54,11 @@ package { 'nginx':
 > This example installs the `nginx` package on the system.
 
 
+
 3. __Service Resource__: The service resource is used to manage
 services on a system. It can be used to start, stop, restart, or
-enable/disable services.<br>
+enable/disable services.
+
 Example:
 ```
 service { 'nginx':
@@ -66,8 +71,10 @@ service { 'nginx':
 and it subscribes to changes in the `/etc/nginx/nginx.conf` file resource.
 
 
+
 4. __User Resource__: The user resource is used to manage users on a system.
-It can be used to create, modify, or delete users. <br>
+It can be used to create, modify, or delete users.
+
 Example:
 ```
 user { 'john':
@@ -83,8 +90,10 @@ user { 'john':
 shell, and home directory.
 
 
+
 5. __Group Resource__: The group resource is used to manage groups on a
-system. It can be used to create, modify, or delete groups.<br>
+system. It can be used to create, modify, or delete groups.
+
 Example:
 ```
 group { 'users':
@@ -94,9 +103,11 @@ group { 'users':
 > This example creates a group `users`.
 
 
+
 6. __Exec Resource__: The exec resource is used to run arbitrary commands
 on a system. It can be used to execute scripts, install software manually
-or make changes that are not handled by a pre-built resource. <br>
+or make changes that are not handled by a pre-built resource.
+
 Example:
 ```
 exec { 'update-system':
@@ -107,6 +118,7 @@ exec { 'update-system':
 > This example runs the command `/usr/bin/apt-get` update when the resource
 is refreshed, which means it will only run when another resource needs to be
 refreshed or executed.
+
 
 
 These are just a few of the many resources available in Puppet, and they
