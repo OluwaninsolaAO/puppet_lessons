@@ -30,6 +30,42 @@ $ sudo gem install puppet-lint
 ```
 
 
+### Basics construct of a puppet manifest
+
+Following are some of the relevant Puppet terminology and concepts.
+
+__Resources__: Puppet code is composed primarily of resource
+declarations. A resource describes something about the state of the
+system, such as a certain user or file should exist, or a package
+should be installed. Resource declarations are formatted as follows:
+
+```
+resource_type { 'resource_name'
+  attribute => value,
+  ...
+}
+```
+
+
+__Manifests__: Puppet programs are called manifests. Manifests are
+composed of puppet code and their filenames use the `.pp` extension.
+
+
+__Classes__: In Puppet, classes are code blocks that can be called
+in a code elsewhere, and have the ability to take in arguments just like
+any other language methods or functions. Using classes allows you reuse
+Puppet code, and can make reading manifests easier. Here is how a class
+definition is formatted:
+
+```
+class example_class {
+  ...
+  code
+  ...
+}
+```
+
+
 ### Puppet Resources with examples
 Puppet is a configuration management tool that allows system
 administrators to automate the deployment and management of
